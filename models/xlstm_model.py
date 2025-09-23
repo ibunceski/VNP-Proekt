@@ -16,7 +16,7 @@ class TimeSeriesPredictor(nn.Module):
         cfg = xLSTMBlockStackConfig(
             mlstm_block=mLSTMBlockConfig(
                 mlstm=mLSTMLayerConfig(conv1d_kernel_size=3,
-                                       qkv_proj_blocksize=2, num_heads=4)
+                                       qkv_proj_blocksize=2, num_heads=1)
             ),
             slstm_block=sLSTMBlockConfig(
                 slstm=sLSTMLayerConfig(
