@@ -2,7 +2,6 @@ import random
 
 import torch
 from torch.utils.data import Dataset
-import pandas as pd
 import yfinance as yf
 from sklearn.preprocessing import MinMaxScaler
 

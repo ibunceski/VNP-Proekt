@@ -9,7 +9,7 @@ from xlstm import (
 
 class TimeSeriesPredictor(nn.Module):
     def __init__(self, input_dim, hidden_dim=128, num_blocks=3,
-                 context_length=30, horizon=5, dropout=0.2):
+                 context_length=20, horizon=5, dropout=0.2):
         super().__init__()
         self.embedding = nn.Linear(input_dim, hidden_dim)
 

@@ -16,7 +16,7 @@ from utils.helpers import inverse_close, plot_loss, plot_forecast
 
 
 def main():
-    ticker = "NVDA"
+    ticker = "TSLA"
     df = load_stock_data(ticker, period="10y", interval="1d")
     seq_len, horizon = 20, 5
     train_ds, valid_ds, scaler, test = prepare_data(df, seq_len, horizon)

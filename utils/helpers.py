@@ -8,9 +8,8 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 
 def inverse_close(scaled_values, scaler, close_idx):
-    scaled_values = np.array(scaled_values).reshape(-1)  # (N,)
+    scaled_values = np.array(scaled_values).reshape(-1)
 
-    # if close_idx is an array (e.g., from np.where), extract the first element
     if isinstance(close_idx, (np.ndarray, list)):
         close_idx = int(close_idx[0])
     else:
